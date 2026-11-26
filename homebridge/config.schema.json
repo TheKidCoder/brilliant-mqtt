@@ -1,0 +1,104 @@
+{
+  "pluginAlias": "BrilliantMqtt",
+  "pluginType": "platform",
+  "singular": true,
+  "headerDisplay": "Exposes Brilliant panels to HomeKit through the brilliant-mqtt on-panel agent. Install the agent on each panel first with the bundled `brilliant-homebridge install` command — see the plugin README.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "default": "Brilliant"
+      },
+      "mqtt": {
+        "title": "MQTT broker",
+        "type": "object",
+        "properties": {
+          "url": {
+            "title": "Broker URL",
+            "type": "string",
+            "default": "mqtt://localhost:1883",
+            "description": "The broker the panels publish to, as reachable from Homebridge. Use mqtts:// for TLS.",
+            "pattern": "^(mqtts?|wss?)://"
+          },
+          "username": { "title": "Username", "type": "string" },
+          "password": { "title": "Password", "type": "string", "x-schema-form": { "type": "password" } },
+          "caFile": {
+            "title": "CA certificate file",
+            "type": "string",
+            "description": "PEM file for a private broker CA (mqtts:// only)."
+          },
+          "rejectUnauthorized": {
+            "title": "Verify the broker certificate",
+            "type": "boolean",
+            "default": true
+          }
+        }
+      },
+      "expose": {
+        "title": "What to expose",
+        "type": "object",
+        "properties": {
+          "panelControls": {
+            "title": "Panel settings",
+            "type": "boolean",
+            "default": true,
+            "description": "Screen, volume, mic mute, night mode, child lock, screensaver… as switches and sliders (about 15 per panel)."
+          },
+          "diagnostics": {
+            "title": "Diagnostics",
+            "type": "boolean",
+            "default": true,
+            "description": "Load/CPU temperatures, fault, Wi-Fi/internet/NTP status, camera-active."
+          },
+          "power": {
+            "title": "Power (W)",
+            "type": "boolean",
+            "default": true,
+            "description": "Per-circuit wattage as an Eve characteristic. Visible in Eve / Controller for HomeKit, not in Apple's Home app."
+          },
+          "scenes": {
+            "title": "Brilliant scenes and modes",
+            "type": "boolean",
+            "default": true,
+            "description": "Momentary switches that run a panel's Brilliant scenes. Requires the scene bridge on the agent (the installer enables it by default)."
+          },
+          "disabledByDefault": {
+            "title": "Advanced tuning entities",
+            "type": "boolean",
+            "default": false,
+            "description": "Entities the agent marks disabled-by-default: motion thresholds, lock-screen widgets, firmware auto-update, remote assistance…"
+          }
+        }
+      },
+      "exclude": {
+        "title": "Exclude",
+        "type": "array",
+        "description": "Hide entities whose name or id matches. * is a wildcard, e.g. \"*Temperature\" or \"brilliant_office_*volume*\".",
+        "items": { "title": "Pattern", "type": "string" }
+      },
+      "panels": {
+        "title": "Only these panels",
+        "type": "array",
+        "description": "Panel names (as given to the installer) to include. Empty = all. The BLE-mesh devices are the panel \"mesh\".",
+        "items": { "title": "Panel", "type": "string" }
+      },
+      "numberService": {
+        "title": "Show sliders (volume, brightness, timeouts) as",
+        "type": "string",
+        "default": "fan",
+        "oneOf": [
+          { "title": "Fan speed (not affected by \"turn off the lights\")", "enum": ["fan"] },
+          { "title": "Light brightness", "enum": ["lightbulb"] }
+        ]
+      },
+      "pruneStale": {
+        "title": "Remove accessories missing from the broker",
+        "type": "boolean",
+        "default": false,
+        "description": "Off by default: an accessory is only removed when the agent explicitly retires it. Turning this on also removes accessories whenever the broker loses its retained messages, which discards their HomeKit rooms and automations."
+      }
+    }
+  }
+}
