@@ -13,6 +13,12 @@ cloud, no HomeKit pairing, no flaky BLE.
 [![Ko-fi][kofi-shield]][kofi]
 [![Built with Omnigent][omnigent-shield]][omnigent]
 
+> **This fork adds Homebridge support.** To use Brilliant panels with HomeKit via
+> Homebridge instead of Home Assistant, see **[homebridge/README.md](homebridge/README.md)**.
+> The on-panel agent and its MQTT contract are unchanged from
+> [upstream](https://github.com/joyfulhouse/brilliant-mqtt); everything below is
+> upstream's Home Assistant documentation.
+
 > For **Brilliant NextGen** in-wall panels ([brilliant.tech](https://www.brilliant.tech)) —
 > not the Australian "Brilliant Smart" plug/bulb brand. See [Credits](#credits).
 

@@ -1,0 +1,495 @@
+{
+  "peripherals": [
+    {
+      "entities": [
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"brightness\": true, \"command_topic\": \"brilliant/office/gangbox_peripheral_0/set\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"name\": \"Ceiling Lights\", \"schema\": \"json\", \"state_topic\": \"brilliant/office/gangbox_peripheral_0/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_0\"}",
+          "topic": "homeassistant/light/brilliant_office_gangbox_peripheral_0/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"power\", \"name\": \"Ceiling Lights Power\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/office/gangbox_peripheral_0/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_0_power\", \"unit_of_measurement\": \"W\", \"value_template\": \"{{ value_json.power }}\"}",
+          "topic": "homeassistant/sensor/brilliant_office_gangbox_peripheral_0_power/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"temperature\", \"entity_category\": \"diagnostic\", \"name\": \"Ceiling Lights Temperature\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/office/gangbox_peripheral_0/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_0_temperature\", \"unit_of_measurement\": \"\\u00b0C\", \"value_template\": \"{{ value_json.temperature }}\"}",
+          "topic": "homeassistant/sensor/brilliant_office_gangbox_peripheral_0_temperature/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"problem\", \"entity_category\": \"diagnostic\", \"name\": \"Ceiling Lights Fault\", \"state_topic\": \"brilliant/office/gangbox_peripheral_0/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_0_is_safe\", \"value_template\": \"{{ 'ON' if value_json.fault else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_office_gangbox_peripheral_0_is_safe/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"motion\", \"name\": \"Ceiling Lights Motion\", \"state_topic\": \"brilliant/office/gangbox_peripheral_0/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_0_movement_detected\", \"value_template\": \"{{ 'ON' if value_json.motion else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_office_gangbox_peripheral_0_movement_detected/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"diagnostic\", \"name\": \"Ceiling Lights Motion Score\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/office/gangbox_peripheral_0/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_0_motion_score\", \"value_template\": \"{{ value_json.motion_score }}\"}",
+          "topic": "homeassistant/sensor/brilliant_office_gangbox_peripheral_0_motion_score/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/gangbox_peripheral_0/set_enable_motion_score\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"Ceiling Lights Motion Score Reporting\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/gangbox_peripheral_0/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_0_enable_motion_score\", \"value_template\": \"{{ 'ON' if value_json.enable_motion_score else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_gangbox_peripheral_0_enable_motion_score/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/gangbox_peripheral_0/set_motion_high_threshold\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"max\": 255, \"min\": 0, \"mode\": \"slider\", \"name\": \"Ceiling Lights Motion High Threshold\", \"state_topic\": \"brilliant/office/gangbox_peripheral_0/state\", \"step\": 1, \"unique_id\": \"brilliant_office_gangbox_peripheral_0_motion_high_threshold\", \"value_template\": \"{{ value_json.motion_high_threshold }}\"}",
+          "topic": "homeassistant/number/brilliant_office_gangbox_peripheral_0_motion_high_threshold/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/gangbox_peripheral_0/set_motion_low_threshold\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"max\": 255, \"min\": 0, \"mode\": \"slider\", \"name\": \"Ceiling Lights Motion Low Threshold\", \"state_topic\": \"brilliant/office/gangbox_peripheral_0/state\", \"step\": 1, \"unique_id\": \"brilliant_office_gangbox_peripheral_0_motion_low_threshold\", \"value_template\": \"{{ value_json.motion_low_threshold }}\"}",
+          "topic": "homeassistant/number/brilliant_office_gangbox_peripheral_0_motion_low_threshold/config"
+        }
+      ],
+      "kind": "light",
+      "panel": "office",
+      "state": {
+        "brightness": 128,
+        "enable_motion_score": true,
+        "fault": false,
+        "motion": true,
+        "motion_high_threshold": 50,
+        "motion_low_threshold": 50,
+        "motion_score": 50,
+        "power": 23.5,
+        "state": "ON",
+        "temperature": 235.0
+      },
+      "state_topic": "brilliant/office/gangbox_peripheral_0/state"
+    },
+    {
+      "entities": [
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/gangbox_peripheral_1/set\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"name\": \"Fan\", \"payload_off\": \"{\\\"state\\\": \\\"OFF\\\"}\", \"payload_on\": \"{\\\"state\\\": \\\"ON\\\"}\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/gangbox_peripheral_1/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_1\", \"value_template\": \"{{ value_json.state }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_gangbox_peripheral_1/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"power\", \"name\": \"Fan Power\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/office/gangbox_peripheral_1/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_1_power\", \"unit_of_measurement\": \"W\", \"value_template\": \"{{ value_json.power }}\"}",
+          "topic": "homeassistant/sensor/brilliant_office_gangbox_peripheral_1_power/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"temperature\", \"entity_category\": \"diagnostic\", \"name\": \"Fan Temperature\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/office/gangbox_peripheral_1/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_1_temperature\", \"unit_of_measurement\": \"\\u00b0C\", \"value_template\": \"{{ value_json.temperature }}\"}",
+          "topic": "homeassistant/sensor/brilliant_office_gangbox_peripheral_1_temperature/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"problem\", \"entity_category\": \"diagnostic\", \"name\": \"Fan Fault\", \"state_topic\": \"brilliant/office/gangbox_peripheral_1/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_1_is_safe\", \"value_template\": \"{{ 'ON' if value_json.fault else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_office_gangbox_peripheral_1_is_safe/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"motion\", \"name\": \"Fan Motion\", \"state_topic\": \"brilliant/office/gangbox_peripheral_1/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_1_movement_detected\", \"value_template\": \"{{ 'ON' if value_json.motion else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_office_gangbox_peripheral_1_movement_detected/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"diagnostic\", \"name\": \"Fan Motion Score\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/office/gangbox_peripheral_1/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_1_motion_score\", \"value_template\": \"{{ value_json.motion_score }}\"}",
+          "topic": "homeassistant/sensor/brilliant_office_gangbox_peripheral_1_motion_score/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/gangbox_peripheral_1/set_enable_motion_score\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"Fan Motion Score Reporting\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/gangbox_peripheral_1/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_1_enable_motion_score\", \"value_template\": \"{{ 'ON' if value_json.enable_motion_score else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_gangbox_peripheral_1_enable_motion_score/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/gangbox_peripheral_1/set_motion_high_threshold\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"max\": 255, \"min\": 0, \"mode\": \"slider\", \"name\": \"Fan Motion High Threshold\", \"state_topic\": \"brilliant/office/gangbox_peripheral_1/state\", \"step\": 1, \"unique_id\": \"brilliant_office_gangbox_peripheral_1_motion_high_threshold\", \"value_template\": \"{{ value_json.motion_high_threshold }}\"}",
+          "topic": "homeassistant/number/brilliant_office_gangbox_peripheral_1_motion_high_threshold/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/gangbox_peripheral_1/set_motion_low_threshold\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"max\": 255, \"min\": 0, \"mode\": \"slider\", \"name\": \"Fan Motion Low Threshold\", \"state_topic\": \"brilliant/office/gangbox_peripheral_1/state\", \"step\": 1, \"unique_id\": \"brilliant_office_gangbox_peripheral_1_motion_low_threshold\", \"value_template\": \"{{ value_json.motion_low_threshold }}\"}",
+          "topic": "homeassistant/number/brilliant_office_gangbox_peripheral_1_motion_low_threshold/config"
+        }
+      ],
+      "kind": "switch",
+      "panel": "office",
+      "state": {
+        "enable_motion_score": true,
+        "fault": false,
+        "motion": true,
+        "motion_high_threshold": 50,
+        "motion_low_threshold": 50,
+        "motion_score": 50,
+        "power": 23.5,
+        "state": "ON",
+        "temperature": 235.0
+      },
+      "state_topic": "brilliant/office/gangbox_peripheral_1/state"
+    },
+    {
+      "entities": [
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"power\", \"name\": \"Outlets Power\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/office/gangbox_peripheral_2/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_2_power\", \"unit_of_measurement\": \"W\", \"value_template\": \"{{ value_json.power }}\"}",
+          "topic": "homeassistant/sensor/brilliant_office_gangbox_peripheral_2_power/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"temperature\", \"entity_category\": \"diagnostic\", \"name\": \"Outlets Temperature\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/office/gangbox_peripheral_2/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_2_temperature\", \"unit_of_measurement\": \"\\u00b0C\", \"value_template\": \"{{ value_json.temperature }}\"}",
+          "topic": "homeassistant/sensor/brilliant_office_gangbox_peripheral_2_temperature/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"problem\", \"entity_category\": \"diagnostic\", \"name\": \"Outlets Fault\", \"state_topic\": \"brilliant/office/gangbox_peripheral_2/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_2_is_safe\", \"value_template\": \"{{ 'ON' if value_json.fault else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_office_gangbox_peripheral_2_is_safe/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"motion\", \"name\": \"Outlets Motion\", \"state_topic\": \"brilliant/office/gangbox_peripheral_2/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_2_movement_detected\", \"value_template\": \"{{ 'ON' if value_json.motion else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_office_gangbox_peripheral_2_movement_detected/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"diagnostic\", \"name\": \"Outlets Motion Score\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/office/gangbox_peripheral_2/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_2_motion_score\", \"value_template\": \"{{ value_json.motion_score }}\"}",
+          "topic": "homeassistant/sensor/brilliant_office_gangbox_peripheral_2_motion_score/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/gangbox_peripheral_2/set_enable_motion_score\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"Outlets Motion Score Reporting\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/gangbox_peripheral_2/state\", \"unique_id\": \"brilliant_office_gangbox_peripheral_2_enable_motion_score\", \"value_template\": \"{{ 'ON' if value_json.enable_motion_score else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_gangbox_peripheral_2_enable_motion_score/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/gangbox_peripheral_2/set_motion_high_threshold\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"max\": 255, \"min\": 0, \"mode\": \"slider\", \"name\": \"Outlets Motion High Threshold\", \"state_topic\": \"brilliant/office/gangbox_peripheral_2/state\", \"step\": 1, \"unique_id\": \"brilliant_office_gangbox_peripheral_2_motion_high_threshold\", \"value_template\": \"{{ value_json.motion_high_threshold }}\"}",
+          "topic": "homeassistant/number/brilliant_office_gangbox_peripheral_2_motion_high_threshold/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/gangbox_peripheral_2/set_motion_low_threshold\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"max\": 255, \"min\": 0, \"mode\": \"slider\", \"name\": \"Outlets Motion Low Threshold\", \"state_topic\": \"brilliant/office/gangbox_peripheral_2/state\", \"step\": 1, \"unique_id\": \"brilliant_office_gangbox_peripheral_2_motion_low_threshold\", \"value_template\": \"{{ value_json.motion_low_threshold }}\"}",
+          "topic": "homeassistant/number/brilliant_office_gangbox_peripheral_2_motion_low_threshold/config"
+        }
+      ],
+      "kind": "always_on",
+      "panel": "office",
+      "state": {
+        "enable_motion_score": true,
+        "fault": false,
+        "motion": true,
+        "motion_high_threshold": 50,
+        "motion_low_threshold": 50,
+        "motion_score": 50,
+        "power": 23.5,
+        "temperature": 235.0
+      },
+      "state_topic": "brilliant/office/gangbox_peripheral_2/state"
+    },
+    {
+      "entities": [
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"motion\", \"name\": \"Motion\", \"state_topic\": \"brilliant/office/motion_peripheral/state\", \"unique_id\": \"brilliant_office_motion_peripheral\", \"value_template\": \"{{ 'ON' if value_json.motion else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_office_motion_peripheral/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"illuminance\", \"name\": \"Illuminance\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/office/motion_peripheral/state\", \"unique_id\": \"brilliant_office_motion_peripheral_lux\", \"unit_of_measurement\": \"lx\", \"value_template\": \"{{ value_json.lux }}\"}",
+          "topic": "homeassistant/sensor/brilliant_office_motion_peripheral_lux/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/motion_peripheral/set_led_on\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"name\": \"Faceplate LED\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/motion_peripheral/state\", \"unique_id\": \"brilliant_office_motion_peripheral_led_on\", \"value_template\": \"{{ 'ON' if value_json.led_on else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_motion_peripheral_led_on/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/motion_peripheral/set_enable_lux\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"name\": \"Illuminance Sensor\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/motion_peripheral/state\", \"unique_id\": \"brilliant_office_motion_peripheral_enable_lux\", \"value_template\": \"{{ 'ON' if value_json.enable_lux else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_motion_peripheral_enable_lux/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"diagnostic\", \"name\": \"PIR Score\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/office/motion_peripheral/state\", \"unique_id\": \"brilliant_office_motion_peripheral_pir_motion_score\", \"value_template\": \"{{ value_json.pir_motion_score }}\"}",
+          "topic": "homeassistant/sensor/brilliant_office_motion_peripheral_pir_motion_score/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/motion_peripheral/set_enable_screen_motion_detection\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"Screen Motion Detection\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/motion_peripheral/state\", \"unique_id\": \"brilliant_office_motion_peripheral_enable_screen_motion_detection\", \"value_template\": \"{{ 'ON' if value_json.enable_screen_motion_detection else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_motion_peripheral_enable_screen_motion_detection/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/motion_peripheral/set_enable_pir_motion_score\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"PIR Score Reporting\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/motion_peripheral/state\", \"unique_id\": \"brilliant_office_motion_peripheral_enable_pir_motion_score\", \"value_template\": \"{{ 'ON' if value_json.enable_pir_motion_score else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_motion_peripheral_enable_pir_motion_score/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/motion_peripheral/set_enable_light_motion_detection\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"Light Motion Detection\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/motion_peripheral/state\", \"unique_id\": \"brilliant_office_motion_peripheral_enable_light_motion_detection\", \"value_template\": \"{{ 'ON' if value_json.enable_light_motion_detection else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_motion_peripheral_enable_light_motion_detection/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/motion_peripheral/set_pir_motion_detection_high_threshold\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"max\": 100, \"min\": 0, \"mode\": \"slider\", \"name\": \"PIR Motion High Threshold\", \"state_topic\": \"brilliant/office/motion_peripheral/state\", \"step\": 1, \"unique_id\": \"brilliant_office_motion_peripheral_pir_motion_detection_high_threshold\", \"value_template\": \"{{ value_json.pir_motion_detection_high_threshold }}\"}",
+          "topic": "homeassistant/number/brilliant_office_motion_peripheral_pir_motion_detection_high_threshold/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/motion_peripheral/set_pir_motion_detection_low_threshold\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"max\": 100, \"min\": 0, \"mode\": \"slider\", \"name\": \"PIR Motion Low Threshold\", \"state_topic\": \"brilliant/office/motion_peripheral/state\", \"step\": 1, \"unique_id\": \"brilliant_office_motion_peripheral_pir_motion_detection_low_threshold\", \"value_template\": \"{{ value_json.pir_motion_detection_low_threshold }}\"}",
+          "topic": "homeassistant/number/brilliant_office_motion_peripheral_pir_motion_detection_low_threshold/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"temperature\", \"enabled_by_default\": false, \"entity_category\": \"diagnostic\", \"name\": \"Internal Temperature\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/office/motion_peripheral/state\", \"unique_id\": \"brilliant_office_motion_peripheral_hottest_internal_temperature\", \"unit_of_measurement\": \"\\u00b0C\", \"value_template\": \"{{ value_json.hottest_internal_temperature }}\"}",
+          "topic": "homeassistant/sensor/brilliant_office_motion_peripheral_hottest_internal_temperature/config"
+        }
+      ],
+      "kind": "binary_sensor",
+      "panel": "office",
+      "state": {
+        "enable_light_motion_detection": true,
+        "enable_lux": true,
+        "enable_pir_motion_score": true,
+        "enable_screen_motion_detection": true,
+        "hottest_internal_temperature": 235.0,
+        "led_on": true,
+        "lux": 120.0,
+        "motion": false,
+        "pir_motion_detection_high_threshold": 50,
+        "pir_motion_detection_low_threshold": 50,
+        "pir_motion_score": 50
+      },
+      "state_topic": "brilliant/office/motion_peripheral/state"
+    },
+    {
+      "entities": [
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/hardware_peripheral/set_muted\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"name\": \"Microphone Mute\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/hardware_peripheral/state\", \"unique_id\": \"brilliant_office_hardware_peripheral_muted\", \"value_template\": \"{{ 'ON' if value_json.muted else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_hardware_peripheral_muted/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/hardware_peripheral/set_screen_on\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"name\": \"Screen\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/hardware_peripheral/state\", \"unique_id\": \"brilliant_office_hardware_peripheral_screen_on\", \"value_template\": \"{{ 'ON' if value_json.screen_on else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_hardware_peripheral_screen_on/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/hardware_peripheral/set_screen_brightness\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"max\": 15, \"min\": 0, \"mode\": \"slider\", \"name\": \"Screen Brightness\", \"state_topic\": \"brilliant/office/hardware_peripheral/state\", \"step\": 1, \"unique_id\": \"brilliant_office_hardware_peripheral_screen_brightness\", \"value_template\": \"{{ value_json.screen_brightness }}\"}",
+          "topic": "homeassistant/number/brilliant_office_hardware_peripheral_screen_brightness/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/hardware_peripheral/set_output_volume\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"max\": 100, \"min\": 0, \"mode\": \"slider\", \"name\": \"Volume\", \"state_topic\": \"brilliant/office/hardware_peripheral/state\", \"step\": 1, \"unique_id\": \"brilliant_office_hardware_peripheral_output_volume\", \"value_template\": \"{{ value_json.output_volume }}\"}",
+          "topic": "homeassistant/number/brilliant_office_hardware_peripheral_output_volume/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/hardware_peripheral/set_alert_volume\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"max\": 100, \"min\": 0, \"mode\": \"slider\", \"name\": \"Alert Volume\", \"state_topic\": \"brilliant/office/hardware_peripheral/state\", \"step\": 1, \"unique_id\": \"brilliant_office_hardware_peripheral_alert_volume\", \"value_template\": \"{{ value_json.alert_volume }}\"}",
+          "topic": "homeassistant/number/brilliant_office_hardware_peripheral_alert_volume/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/hardware_peripheral/set_duck_speaker\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"Speaker Ducking\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/hardware_peripheral/state\", \"unique_id\": \"brilliant_office_hardware_peripheral_duck_speaker\", \"value_template\": \"{{ 'ON' if value_json.duck_speaker else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_hardware_peripheral_duck_speaker/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/hardware_peripheral/set_low_temp_mode\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"Low Temperature Mode\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/hardware_peripheral/state\", \"unique_id\": \"brilliant_office_hardware_peripheral_low_temp_mode\", \"value_template\": \"{{ 'ON' if value_json.low_temp_mode else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_hardware_peripheral_low_temp_mode/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/hardware_peripheral/set_software_update_enabled\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"Firmware Auto-Update\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/hardware_peripheral/state\", \"unique_id\": \"brilliant_office_hardware_peripheral_software_update_enabled\", \"value_template\": \"{{ 'ON' if value_json.software_update_enabled else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_hardware_peripheral_software_update_enabled/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/hardware_peripheral/set_remote_assistance_enabled\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"Remote Assistance\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/hardware_peripheral/state\", \"unique_id\": \"brilliant_office_hardware_peripheral_remote_assistance_enabled\", \"value_template\": \"{{ 'ON' if value_json.remote_assistance_enabled else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_hardware_peripheral_remote_assistance_enabled/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"temperature\", \"entity_category\": \"diagnostic\", \"name\": \"CPU Temperature\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/office/hardware_peripheral/state\", \"unique_id\": \"brilliant_office_hardware_peripheral_cpu_temperature\", \"unit_of_measurement\": \"\\u00b0C\", \"value_template\": \"{{ value_json.cpu_temperature }}\"}",
+          "topic": "homeassistant/sensor/brilliant_office_hardware_peripheral_cpu_temperature/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"running\", \"entity_category\": \"diagnostic\", \"name\": \"Camera\", \"state_topic\": \"brilliant/office/hardware_peripheral/state\", \"unique_id\": \"brilliant_office_hardware_peripheral_camera_on\", \"value_template\": \"{{ 'ON' if value_json.camera_on else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_office_hardware_peripheral_camera_on/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"diagnostic\", \"name\": \"Privacy Mode\", \"state_topic\": \"brilliant/office/hardware_peripheral/state\", \"unique_id\": \"brilliant_office_hardware_peripheral_privacy_toggle\", \"value_template\": \"{{ 'ON' if value_json.privacy_toggle else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_office_hardware_peripheral_privacy_toggle/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"diagnostic\", \"name\": \"Firmware\", \"state_topic\": \"brilliant/office/hardware_peripheral/state\", \"unique_id\": \"brilliant_office_hardware_peripheral_current_release_tag\", \"value_template\": \"{{ value_json.current_release_tag }}\"}",
+          "topic": "homeassistant/sensor/brilliant_office_hardware_peripheral_current_release_tag/config"
+        }
+      ],
+      "kind": "hardware",
+      "panel": "office",
+      "state": {
+        "alert_volume": 50,
+        "camera_on": true,
+        "cpu_temperature": 235.0,
+        "current_release_tag": "v1",
+        "duck_speaker": true,
+        "low_temp_mode": true,
+        "muted": true,
+        "output_volume": 50,
+        "privacy_toggle": true,
+        "remote_assistance_enabled": true,
+        "screen_brightness": 50,
+        "screen_on": true,
+        "software_update_enabled": true
+      },
+      "state_topic": "brilliant/office/hardware_peripheral/state"
+    },
+    {
+      "entities": [
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"occupancy\", \"name\": \"In Use\", \"state_topic\": \"brilliant/office/ui_peripheral/state\", \"unique_id\": \"brilliant_office_ui_peripheral_active\", \"value_template\": \"{{ 'ON' if value_json.active else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_office_ui_peripheral_active/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/ui_peripheral/set_child_lock_enabled\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"name\": \"Child Lock\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/ui_peripheral/state\", \"unique_id\": \"brilliant_office_ui_peripheral_child_lock_enabled\", \"value_template\": \"{{ 'ON' if value_json.child_lock_enabled else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_ui_peripheral_child_lock_enabled/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/ui_peripheral/set_enable_night_mode\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"name\": \"Night Mode\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/ui_peripheral/state\", \"unique_id\": \"brilliant_office_ui_peripheral_enable_night_mode\", \"value_template\": \"{{ 'ON' if value_json.enable_night_mode else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_ui_peripheral_enable_night_mode/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/ui_peripheral/set_request_identify\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"name\": \"Identify\", \"payload_press\": \"PRESS\", \"unique_id\": \"brilliant_office_ui_peripheral_request_identify\"}",
+          "topic": "homeassistant/button/brilliant_office_ui_peripheral_request_identify/config"
+        }
+      ],
+      "kind": "ui",
+      "panel": "office",
+      "state": {
+        "active": true,
+        "child_lock_enabled": true,
+        "enable_night_mode": true,
+        "request_identify": true
+      },
+      "state_topic": "brilliant/office/ui_peripheral/state"
+    },
+    {
+      "entities": [
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"connectivity\", \"entity_category\": \"diagnostic\", \"name\": \"Wi-Fi\", \"state_topic\": \"brilliant/office/wifi_peripheral/state\", \"unique_id\": \"brilliant_office_wifi_peripheral_association_status\", \"value_template\": \"{{ 'ON' if value_json.association_status else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_office_wifi_peripheral_association_status/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"connectivity\", \"entity_category\": \"diagnostic\", \"name\": \"Internet\", \"state_topic\": \"brilliant/office/wifi_peripheral/state\", \"unique_id\": \"brilliant_office_wifi_peripheral_connectivity_ping_successful\", \"value_template\": \"{{ 'ON' if value_json.connectivity_ping_successful else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_office_wifi_peripheral_connectivity_ping_successful/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"diagnostic\", \"name\": \"NTP Sync\", \"state_topic\": \"brilliant/office/wifi_peripheral/state\", \"unique_id\": \"brilliant_office_wifi_peripheral_ntp_synced\", \"value_template\": \"{{ 'ON' if value_json.ntp_synced else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_office_wifi_peripheral_ntp_synced/config"
+        }
+      ],
+      "kind": "wifi",
+      "panel": "office",
+      "state": {
+        "association_status": true,
+        "connectivity_ping_successful": true,
+        "ntp_synced": true
+      },
+      "state_topic": "brilliant/office/wifi_peripheral/state"
+    },
+    {
+      "entities": [
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/motion_config/set_trigger_screen\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"name\": \"Wake Screen on Motion\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/motion_config/state\", \"unique_id\": \"brilliant_office_motion_config_trigger_screen\", \"value_template\": \"{{ 'ON' if value_json.trigger_screen else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_motion_config_trigger_screen/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/motion_config/set_trigger_screen_off\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"name\": \"Sleep Screen After Motion Stops\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/motion_config/state\", \"unique_id\": \"brilliant_office_motion_config_trigger_screen_off\", \"value_template\": \"{{ 'ON' if value_json.trigger_screen_off else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_motion_config_trigger_screen_off/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/motion_config/set_trigger_screen_off_timeout_sec\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"max\": 3600, \"min\": 30, \"mode\": \"slider\", \"name\": \"Screen Off Timeout\", \"state_topic\": \"brilliant/office/motion_config/state\", \"step\": 30, \"unique_id\": \"brilliant_office_motion_config_trigger_screen_off_timeout_sec\", \"value_template\": \"{{ value_json.trigger_screen_off_timeout_sec }}\"}",
+          "topic": "homeassistant/number/brilliant_office_motion_config_trigger_screen_off_timeout_sec/config"
+        }
+      ],
+      "kind": "motion_config",
+      "panel": "office",
+      "state": {
+        "trigger_screen": true,
+        "trigger_screen_off": true,
+        "trigger_screen_off_timeout_sec": 50
+      },
+      "state_topic": "brilliant/office/motion_config/state"
+    },
+    {
+      "entities": [
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/art_config/set_on\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"name\": \"Screensaver\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/art_config/state\", \"unique_id\": \"brilliant_office_art_config_on\", \"value_template\": \"{{ 'ON' if value_json.screensaver_on else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_art_config_on/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/art_config/set_display_time_date\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"name\": \"Show Time & Date\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/art_config/state\", \"unique_id\": \"brilliant_office_art_config_display_time_date\", \"value_template\": \"{{ 'ON' if value_json.display_time_date else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_art_config_display_time_date/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/art_config/set_weather_widget_on_lock\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"Weather Widget\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/art_config/state\", \"unique_id\": \"brilliant_office_art_config_weather_widget_on_lock\", \"value_template\": \"{{ 'ON' if value_json.weather_widget_on_lock else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_art_config_weather_widget_on_lock/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/art_config/set_music_widget_on_lock\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"Music Widget\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/art_config/state\", \"unique_id\": \"brilliant_office_art_config_music_widget_on_lock\", \"value_template\": \"{{ 'ON' if value_json.music_widget_on_lock else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_art_config_music_widget_on_lock/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/art_config/set_device_status_on_lock\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"Device Status Widget\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/art_config/state\", \"unique_id\": \"brilliant_office_art_config_device_status_on_lock\", \"value_template\": \"{{ 'ON' if value_json.device_status_on_lock else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_art_config_device_status_on_lock/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/art_config/set_solar_savings_on_lock\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"Solar Savings Widget\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/art_config/state\", \"unique_id\": \"brilliant_office_art_config_solar_savings_on_lock\", \"value_template\": \"{{ 'ON' if value_json.solar_savings_on_lock else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_art_config_solar_savings_on_lock/config"
+        }
+      ],
+      "kind": "art_config",
+      "panel": "office",
+      "state": {
+        "device_status_on_lock": true,
+        "display_time_date": true,
+        "music_widget_on_lock": true,
+        "screensaver_on": true,
+        "solar_savings_on_lock": true,
+        "weather_widget_on_lock": true
+      },
+      "state_topic": "brilliant/office/art_config/state"
+    },
+    {
+      "entities": [
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/device_config/set_disable_cap_touch_sliders\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"name\": \"Touch Sliders\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/device_config/state\", \"unique_id\": \"brilliant_office_device_config_disable_cap_touch_sliders\", \"value_template\": \"{{ 'ON' if value_json.touch_sliders_enabled else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_device_config_disable_cap_touch_sliders/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/device_config/set_receive_intercom_broadcasts\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"entity_category\": \"config\", \"name\": \"Intercom Broadcasts\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/office/device_config/state\", \"unique_id\": \"brilliant_office_device_config_receive_intercom_broadcasts\", \"value_template\": \"{{ 'ON' if value_json.receive_intercom_broadcasts else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_office_device_config_receive_intercom_broadcasts/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/office/availability\"}], \"command_topic\": \"brilliant/office/device_config/set_slider_double_tap_timeout_ms\", \"device\": {\"identifiers\": [\"brilliant_panel_office\"], \"manufacturer\": \"Brilliant\", \"model\": \"Control\", \"name\": \"Brilliant Office\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"max\": 1000, \"min\": 100, \"mode\": \"slider\", \"name\": \"Slider Double-Tap Timeout\", \"state_topic\": \"brilliant/office/device_config/state\", \"step\": 50, \"unique_id\": \"brilliant_office_device_config_slider_double_tap_timeout_ms\", \"value_template\": \"{{ value_json.slider_double_tap_timeout_ms }}\"}",
+          "topic": "homeassistant/number/brilliant_office_device_config_slider_double_tap_timeout_ms/config"
+        }
+      ],
+      "kind": "device_config",
+      "panel": "office",
+      "state": {
+        "receive_intercom_broadcasts": true,
+        "slider_double_tap_timeout_ms": 50,
+        "touch_sliders_enabled": false
+      },
+      "state_topic": "brilliant/office/device_config/state"
+    },
+    {
+      "entities": [
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/mesh/availability\"}], \"brightness\": true, \"command_topic\": \"brilliant/mesh/mesh_dimmer_1/set\", \"device\": {\"identifiers\": [\"brilliant_mesh_mesh_dimmer_1\"], \"manufacturer\": \"Brilliant\", \"model\": \"BLE Mesh\", \"name\": \"Dining Room Lights\", \"sw_version\": \"24.10.1\"}, \"name\": \"Dining Room Lights\", \"schema\": \"json\", \"state_topic\": \"brilliant/mesh/mesh_dimmer_1/state\", \"unique_id\": \"brilliant_mesh_mesh_dimmer_1\"}",
+          "topic": "homeassistant/light/brilliant_mesh_mesh_dimmer_1/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/mesh/availability\"}], \"device\": {\"identifiers\": [\"brilliant_mesh_mesh_dimmer_1\"], \"manufacturer\": \"Brilliant\", \"model\": \"BLE Mesh\", \"name\": \"Dining Room Lights\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"power\", \"name\": \"Dining Room Lights Power\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/mesh/mesh_dimmer_1/state\", \"unique_id\": \"brilliant_mesh_mesh_dimmer_1_power\", \"unit_of_measurement\": \"W\", \"value_template\": \"{{ value_json.power }}\"}",
+          "topic": "homeassistant/sensor/brilliant_mesh_mesh_dimmer_1_power/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/mesh/availability\"}], \"device\": {\"identifiers\": [\"brilliant_mesh_mesh_dimmer_1\"], \"manufacturer\": \"Brilliant\", \"model\": \"BLE Mesh\", \"name\": \"Dining Room Lights\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"temperature\", \"entity_category\": \"diagnostic\", \"name\": \"Dining Room Lights Temperature\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/mesh/mesh_dimmer_1/state\", \"unique_id\": \"brilliant_mesh_mesh_dimmer_1_temperature\", \"unit_of_measurement\": \"\\u00b0C\", \"value_template\": \"{{ value_json.temperature }}\"}",
+          "topic": "homeassistant/sensor/brilliant_mesh_mesh_dimmer_1_temperature/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/mesh/availability\"}], \"device\": {\"identifiers\": [\"brilliant_mesh_mesh_dimmer_1\"], \"manufacturer\": \"Brilliant\", \"model\": \"BLE Mesh\", \"name\": \"Dining Room Lights\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"problem\", \"entity_category\": \"diagnostic\", \"name\": \"Dining Room Lights Fault\", \"state_topic\": \"brilliant/mesh/mesh_dimmer_1/state\", \"unique_id\": \"brilliant_mesh_mesh_dimmer_1_is_safe\", \"value_template\": \"{{ 'ON' if value_json.fault else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_mesh_mesh_dimmer_1_is_safe/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/mesh/availability\"}], \"device\": {\"identifiers\": [\"brilliant_mesh_mesh_dimmer_1\"], \"manufacturer\": \"Brilliant\", \"model\": \"BLE Mesh\", \"name\": \"Dining Room Lights\", \"sw_version\": \"24.10.1\"}, \"device_class\": \"motion\", \"name\": \"Dining Room Lights Motion\", \"state_topic\": \"brilliant/mesh/mesh_dimmer_1/state\", \"unique_id\": \"brilliant_mesh_mesh_dimmer_1_movement_detected\", \"value_template\": \"{{ 'ON' if value_json.motion else 'OFF' }}\"}",
+          "topic": "homeassistant/binary_sensor/brilliant_mesh_mesh_dimmer_1_movement_detected/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/mesh/availability\"}], \"device\": {\"identifiers\": [\"brilliant_mesh_mesh_dimmer_1\"], \"manufacturer\": \"Brilliant\", \"model\": \"BLE Mesh\", \"name\": \"Dining Room Lights\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"diagnostic\", \"name\": \"Dining Room Lights Motion Score\", \"state_class\": \"measurement\", \"state_topic\": \"brilliant/mesh/mesh_dimmer_1/state\", \"unique_id\": \"brilliant_mesh_mesh_dimmer_1_motion_score\", \"value_template\": \"{{ value_json.motion_score }}\"}",
+          "topic": "homeassistant/sensor/brilliant_mesh_mesh_dimmer_1_motion_score/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/mesh/availability\"}], \"command_topic\": \"brilliant/mesh/mesh_dimmer_1/set_enable_motion_score\", \"device\": {\"identifiers\": [\"brilliant_mesh_mesh_dimmer_1\"], \"manufacturer\": \"Brilliant\", \"model\": \"BLE Mesh\", \"name\": \"Dining Room Lights\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"name\": \"Dining Room Lights Motion Score Reporting\", \"payload_off\": \"OFF\", \"payload_on\": \"ON\", \"state_off\": \"OFF\", \"state_on\": \"ON\", \"state_topic\": \"brilliant/mesh/mesh_dimmer_1/state\", \"unique_id\": \"brilliant_mesh_mesh_dimmer_1_enable_motion_score\", \"value_template\": \"{{ 'ON' if value_json.enable_motion_score else 'OFF' }}\"}",
+          "topic": "homeassistant/switch/brilliant_mesh_mesh_dimmer_1_enable_motion_score/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/mesh/availability\"}], \"command_topic\": \"brilliant/mesh/mesh_dimmer_1/set_motion_high_threshold\", \"device\": {\"identifiers\": [\"brilliant_mesh_mesh_dimmer_1\"], \"manufacturer\": \"Brilliant\", \"model\": \"BLE Mesh\", \"name\": \"Dining Room Lights\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"max\": 255, \"min\": 0, \"mode\": \"slider\", \"name\": \"Dining Room Lights Motion High Threshold\", \"state_topic\": \"brilliant/mesh/mesh_dimmer_1/state\", \"step\": 1, \"unique_id\": \"brilliant_mesh_mesh_dimmer_1_motion_high_threshold\", \"value_template\": \"{{ value_json.motion_high_threshold }}\"}",
+          "topic": "homeassistant/number/brilliant_mesh_mesh_dimmer_1_motion_high_threshold/config"
+        },
+        {
+          "payload": "{\"availability\": [{\"topic\": \"brilliant/mesh/availability\"}], \"command_topic\": \"brilliant/mesh/mesh_dimmer_1/set_motion_low_threshold\", \"device\": {\"identifiers\": [\"brilliant_mesh_mesh_dimmer_1\"], \"manufacturer\": \"Brilliant\", \"model\": \"BLE Mesh\", \"name\": \"Dining Room Lights\", \"sw_version\": \"24.10.1\"}, \"enabled_by_default\": false, \"entity_category\": \"config\", \"max\": 255, \"min\": 0, \"mode\": \"slider\", \"name\": \"Dining Room Lights Motion Low Threshold\", \"state_topic\": \"brilliant/mesh/mesh_dimmer_1/state\", \"step\": 1, \"unique_id\": \"brilliant_mesh_mesh_dimmer_1_motion_low_threshold\", \"value_template\": \"{{ value_json.motion_low_threshold }}\"}",
+          "topic": "homeassistant/number/brilliant_mesh_mesh_dimmer_1_motion_low_threshold/config"
+        }
+      ],
+      "kind": "light",
+      "panel": "mesh",
+      "state": {
+        "brightness": 128,
+        "enable_motion_score": true,
+        "fault": false,
+        "motion": true,
+        "motion_high_threshold": 50,
+        "motion_low_threshold": 50,
+        "motion_score": 50,
+        "power": 23.5,
+        "state": "ON",
+        "temperature": 235.0
+      },
+      "state_topic": "brilliant/mesh/mesh_dimmer_1/state"
+    }
+  ]
+}
